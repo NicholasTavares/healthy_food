@@ -1,6 +1,10 @@
+import Home from "./sections/Home";
+
 function App() {
   return (
-    <div>Olá</div>
+    <main style={{display: 'flex', flexDirection: 'column'}}>
+      <Home />
+    </main>
   );
 }
 

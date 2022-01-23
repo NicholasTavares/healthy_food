@@ -3,10 +3,12 @@
 @import "./abstracts/variables";
 
 @import "./layout/grid";
-@import "./layout/sections";
 
 // SECTIONS
 @import "./sections/home";
 
 // COMPONENTS
 @import "./components/header";
+
+// CONTAINERS
+@import "./containers/containerData.scss";
