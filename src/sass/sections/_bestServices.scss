@@ -1,23 +1,25 @@
 .section-bestServices {
   display: flex;
   position: relative;
+  overflow: hidden;
 
   &__illustration {
-    & > img {
-      position: absolute;
+      position: relative;
       left: -25%;
-      width: 100%;
-    }
+      
+      & > img {
+        width: 100%;
+      }
   }
 
   &__message {
     position: absolute;
-    left: 70%;
-    -webkit-transform: translate(-50%, 8%);
-    -moz-transform: translate(-50%, 8%);
-    -ms-transform: translate(-50%, 8%);
-    -o-transform: translate(-50%, 8%);
-    transform: translate(-50%, 8%);
+    left: 71%;
+    -webkit-transform: translate(-50%, 5%);
+    -moz-transform: translate(-50%, 5%);
+    -ms-transform: translate(-50%, 5%);
+    -o-transform: translate(-50%, 5%);
+    transform: translate(-50%, 5%);
     z-index: 1;
 
     & > h2 {
