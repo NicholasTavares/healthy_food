@@ -6,9 +6,11 @@
 
 // SECTIONS
 @import "./sections/home";
+@import "./sections/bestRecipes";
 
 // COMPONENTS
 @import "./components/header";
+@import "./components/bestRecipe";
 
 // CONTAINERS
 @import "./containers/containerData.scss";
