@@ -1,0 +1,38 @@
+.section-bestServices {
+  display: flex;
+  position: relative;
+
+  &__illustration {
+    & > img {
+      position: absolute;
+      left: -25%;
+      width: 100%;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    left: 70%;
+    -webkit-transform: translate(-50%, 8%);
+    -moz-transform: translate(-50%, 8%);
+    -ms-transform: translate(-50%, 8%);
+    -o-transform: translate(-50%, 8%);
+    transform: translate(-50%, 8%);
+    z-index: 1;
+
+    & > h2 {
+      margin-bottom: 1rem;
+      color: $dark-blue-text;
+    }
+
+    & > span {
+      color: rgb(134, 134, 134);
+
+      &:not(:last-child) {
+        display: inline-block;
+        margin-bottom: 1rem;
+        
+      }
+    }
+  }
+}

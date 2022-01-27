@@ -68,10 +68,9 @@ html {
 
 .section-bestRecipes {
   background-color: #FAFAFC;
-  position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh; }
+  min-height: 100vh; }
   .section-bestRecipes__message {
     display: flex;
     align-items: center;
@@ -88,6 +87,31 @@ html {
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem; }
+
+.section-bestServices {
+  display: flex;
+  position: relative; }
+  .section-bestServices__illustration > img {
+    position: absolute;
+    left: -25%;
+    width: 100%; }
+  .section-bestServices__message {
+    position: absolute;
+    left: 70%;
+    -webkit-transform: translate(-50%, 8%);
+    -moz-transform: translate(-50%, 8%);
+    -ms-transform: translate(-50%, 8%);
+    -o-transform: translate(-50%, 8%);
+    transform: translate(-50%, 8%);
+    z-index: 1; }
+    .section-bestServices__message > h2 {
+      margin-bottom: 1rem;
+      color: #1D1B59; }
+    .section-bestServices__message > span {
+      color: #868686; }
+      .section-bestServices__message > span:not(:last-child) {
+        display: inline-block;
+        margin-bottom: 1rem; }
 
 .header {
   display: flex;
