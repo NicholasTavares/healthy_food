@@ -4,6 +4,10 @@
   grid-template-rows: repeat(2, 1fr);
   height: 100vh;
 
+  @include respond(phone) {
+    height: 90vh;
+  }  
+
   &__illustration {
     position: absolute;
     z-index: 0;
@@ -16,6 +20,10 @@
 
   &__form {
     margin-top: 6rem;
+
+    @include respond(phone) {
+      margin-top: 0rem;
+    }
 
     &__title {
       color: #1d164d;

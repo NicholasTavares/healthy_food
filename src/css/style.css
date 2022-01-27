@@ -24,6 +24,9 @@ html {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   height: 100vh; }
+  @media (min-width: 23.43em) {
+    .section-home {
+      height: 90vh; } }
   .section-home__illustration {
     position: absolute;
     z-index: 0;
@@ -33,6 +36,9 @@ html {
       width: 110%; }
   .section-home__form {
     margin-top: 6rem; }
+    @media (min-width: 23.43em) {
+      .section-home__form {
+        margin-top: 0rem; } }
     .section-home__form__title {
       color: #1d164d;
       font-weight: bold;
@@ -59,6 +65,29 @@ html {
         .section-home__form__container-text-button__button > svg {
           color: white;
           font-size: 1.5rem; }
+
+.section-bestRecipes {
+  background-color: #FAFAFC;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; }
+  .section-bestRecipes__message {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .section-bestRecipes__message > h2 {
+      color: #1D1B59;
+      margin-bottom: 1rem; }
+    .section-bestRecipes__message > span {
+      color: #aaaaaa;
+      text-align: center;
+      font-size: 1.1rem; }
+  .section-bestRecipes__recipes-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 1.5rem; }
 
 .header {
   display: flex;
@@ -90,6 +119,33 @@ html {
       .header__options > a:last-child {
         color: #BADC58;
         background-color: white; }
+
+.best-recipe-container {
+  display: flex;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background-color: white;
+  box-shadow: 9px 9px 13px -4px rgba(204, 204, 204, 0.61); }
+  .best-recipe-container__img {
+    width: 10rem; }
+  .best-recipe-container__title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    padding: 0 2rem; }
+    .best-recipe-container__title-container__title {
+      color: #1D1B59;
+      font-size: 1.5rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem; }
+    .best-recipe-container__title-container__input {
+      width: 7rem;
+      border-radius: 0.5rem;
+      background-color: #BDD959;
+      color: white;
+      padding: 0.8rem;
+      cursor: pointer; }
 
 .container {
   padding: 2rem 1rem;
