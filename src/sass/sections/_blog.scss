@@ -1,0 +1,36 @@
+.section-blog {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-best-recipes;
+  overflow-x: auto;
+  position: relative;
+  box-shadow: inset -50px 1px 50px -30px rgba(180, 180, 180, 0.28);
+
+  &__message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    & > h2 {
+      color: $dark-blue-text;
+      margin-bottom: 1rem;
+    }
+
+    & > span {
+      color: rgb(170, 170, 170);
+      text-align: center;
+      font-size: 1.1rem;
+    }
+  }
+
+  &__posts-container {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

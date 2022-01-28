@@ -8,10 +8,13 @@
 @import "./sections/home";
 @import "./sections/bestRecipes";
 @import "./sections/bestServices";
+@import "./sections/blog";
 
 // COMPONENTS
 @import "./components/header";
 @import "./components/bestRecipe";
+@import "./components/post";
+@import "./components/arrow";
 
 // CONTAINERS
 @import "./containers/containerData.scss";
