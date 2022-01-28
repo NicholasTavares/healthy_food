@@ -1,0 +1,37 @@
+.container-arrow-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -2%;
+  top: 64%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+
+  & > svg {
+    color: #afd133;
+    font-size: 1.4rem;
+  }
+}
+
+.container-arrow-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 10%;
+  top: 64%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+
+  & > svg {
+    color: #afd133;
+    font-size: 1.4rem;
+  }
+}
