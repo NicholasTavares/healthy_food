@@ -1,0 +1,53 @@
+.section-membership {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+
+  @include respond(phone) {
+    height: 90vh;
+  }  
+
+  &__illustration {
+    display: flex;
+    justify-content: flex-end;
+    & > img {
+      width: 110%;
+    }
+  }
+
+  &__form {
+
+    &__title {
+      color: #1d164d;
+      font-weight: bold;
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+    }
+
+    &__container-text-button{
+      display: flex;
+      margin-top: 2rem;
+
+      &__input{
+        outline: none;
+        border: 1px solid #1d164d;
+        border-radius: 0.5rem;
+        padding: 0.8rem;
+        color: rgb(172, 172, 172);
+      }
+
+      &__button{
+        margin-left: 1rem;
+        background-color: #BADC58;
+        border-radius: 0.5rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
