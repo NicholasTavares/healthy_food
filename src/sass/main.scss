@@ -9,12 +9,14 @@
 @import "./sections/bestRecipes";
 @import "./sections/bestServices";
 @import "./sections/blog";
+@import "./sections/membership";
 
 // COMPONENTS
 @import "./components/header";
 @import "./components/bestRecipe";
 @import "./components/post";
 @import "./components/arrow";
+@import "./components/footer";
 
 // CONTAINERS
 @import "./containers/containerData.scss";

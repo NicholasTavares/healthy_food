@@ -141,6 +141,44 @@ html {
     .section-blog__posts-container::-webkit-scrollbar {
       display: none; }
 
+.section-membership {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh; }
+  @media (min-width: 23.43em) {
+    .section-membership {
+      height: 90vh; } }
+  .section-membership__illustration {
+    display: flex;
+    justify-content: flex-end; }
+    .section-membership__illustration > img {
+      width: 110%; }
+  .section-membership__form__title {
+    color: #1d164d;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.1rem; }
+  .section-membership__form__container-text-button {
+    display: flex;
+    margin-top: 2rem; }
+    .section-membership__form__container-text-button__input {
+      outline: none;
+      border: 1px solid #1d164d;
+      border-radius: 0.5rem;
+      padding: 0.8rem;
+      color: #acacac; }
+    .section-membership__form__container-text-button__button {
+      margin-left: 1rem;
+      background-color: #BADC58;
+      border-radius: 0.5rem;
+      width: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: white; }
+
 .header {
   display: flex;
   align-items: center;
@@ -264,6 +302,20 @@ html {
   .container-arrow-left > svg {
     color: #afd133;
     font-size: 1.4rem; }
+
+.footer {
+  display: flex;
+  padding: 2rem 2rem;
+  background-color: white;
+  margin-top: 3rem; }
+  .footer__copyright {
+    color: #1d164d;
+    font-size: 0.9rem;
+    margin-right: auto; }
+  .footer__links {
+    display: flex;
+    font-size: 0.85rem;
+    color: #b3b3b3; }
 
 .container {
   padding: 2rem 1rem;
