@@ -12,24 +12,22 @@ const Home = () => {
       <div className="container">
         <Header />
       </div>
-      <div className="container">
-
-        <form className='section-home__form'>
-          <label className='section-home__form__title'
+      <div className="container section-home__container-form">
+        <form className='section-home__container-form__form'>
+          <label className='section-home__container-form__form__title'
           htmlFor="input">
             Ready for <br />
             Trying a new <br />
             recipe? <br />
           </label>
-          <div className="section-home__form__container-text-button">
+          <div className="section-home__container-form__form__container-text-button">
             <input type="text" id='input' placeholder='Search healthy recipes'
-            className='section-home__form__container-text-button__input' />
-            <div className="section-home__form__container-text-button__button">
+            className='section-home__container-form__form__container-text-button__input' />
+            <div className="section-home__container-form__form__container-text-button__button">
               <AiOutlineSearch />
             </div>
           </div>
         </form>
-
       </div>
     </section>
   )
