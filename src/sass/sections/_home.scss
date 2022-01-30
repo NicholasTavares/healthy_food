@@ -4,6 +4,10 @@
   flex-direction: column;
   height: 100vh;
 
+  @include respond(phone) {
+    height: 62vh;
+  }
+
   &__illustration {
     position: absolute;
     z-index: 0;
@@ -12,6 +16,10 @@
 
     & > img {
       width: 110%;
+
+      @include respond(phone) {
+        width: 100%;
+      }
     }
   }
 

@@ -1,11 +1,11 @@
 .section-membership {
   position: relative;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   height: 100vh;
 
   @include respond(phone) {
-    height: 90vh;
+    height: 65vh;
   }  
 
   &__illustration {

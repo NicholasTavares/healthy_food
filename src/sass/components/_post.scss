@@ -8,6 +8,10 @@
   width: 16rem;
   flex: none;
 
+  @include respond(phone) {
+    width: 17rem;
+  }
+
   &:not(:last-child) {
     margin-right: 1rem;
   }
@@ -24,6 +28,10 @@
       font-size: 1.2rem;
       letter-spacing: 0.1rem;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        font-size: 1.25rem;
+      }
     }
 
     &__author {
@@ -38,10 +46,19 @@
         padding: 0.5rem;
         border-radius: 50%;
         margin-right: 0.5rem;
+        
+        @include respond(phone) {
+          padding: 0.5rem;
+          font-size: 1.2rem;
+        }
       }
 
       &__name {
-        color: rgb(160, 160, 160);;
+        color: rgb(160, 160, 160);
+
+        @include respond(phone) {
+          font-size: 1.1rem;
+        }
       }
     }
   }

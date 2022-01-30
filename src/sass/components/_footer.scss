@@ -8,11 +8,19 @@
     color: #1d164d;
     font-size: 0.9rem;
     margin-right: auto;
+
+    @include respond(phone) {
+      font-size: 1rem;
+    } 
   }
 
   &__links {
     display: flex;
     font-size: 0.85rem;
     color: #b3b3b3;
+
+    @include respond(phone) {
+      font-size: 0.9rem;
+    } 
   }
 }

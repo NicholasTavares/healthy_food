@@ -7,6 +7,10 @@
 
   &__img {
     width: 10rem;
+
+    @include respond(phone){
+      width: 11rem;
+    }
   }
 
   &__title-container {
@@ -21,6 +25,10 @@
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
       margin-bottom: 1rem;
+
+      @include respond(phone) {
+        font-size: 1.55rem;
+      }
     }
 
     &__input {
@@ -30,6 +38,10 @@
       color: white;
       padding: 0.8rem;
       cursor: pointer;
+
+      @include respond(phone){
+        font-size: 1.1rem;
+      }
     }
   }
 }

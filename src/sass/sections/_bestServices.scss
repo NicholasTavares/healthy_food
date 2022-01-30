@@ -6,6 +6,10 @@
   &__illustration {
       position: relative;
       left: -25%;
+
+      @include respond(phone){
+        left: -20%;
+      }
       
       & > img {
         width: 100%;
@@ -22,9 +26,17 @@
     transform: translate(-50%, 5%);
     z-index: 1;
 
+    @include respond(phone){
+      top: 6%;
+    }
+
     & > h2 {
       margin-bottom: 1rem;
       color: $dark-blue-text;
+
+      @include respond(phone){
+        font-size: 1.7rem;
+      }
     }
 
     & > span {
@@ -33,7 +45,10 @@
       &:not(:last-child) {
         display: inline-block;
         margin-bottom: 1rem;
-        
+      }
+
+      @include respond(phone){
+        font-size: 1.1rem;
       }
     }
   }

@@ -24,6 +24,9 @@ html {
   display: flex;
   flex-direction: column;
   height: 100vh; }
+  @media (min-width: 23.43em) {
+    .section-home {
+      height: 62vh; } }
   .section-home__illustration {
     position: absolute;
     z-index: 0;
@@ -31,6 +34,9 @@ html {
     justify-content: flex-end; }
     .section-home__illustration > img {
       width: 110%; }
+      @media (min-width: 23.43em) {
+        .section-home__illustration > img {
+          width: 100%; } }
   .section-home__container-form {
     margin-top: auto; }
     .section-home__container-form__form__title {
@@ -63,8 +69,7 @@ html {
 .section-bestRecipes {
   background-color: #FAFAFC;
   display: flex;
-  flex-direction: column;
-  min-height: 100vh; }
+  flex-direction: column; }
   .section-bestRecipes__message {
     display: flex;
     align-items: center;
@@ -72,10 +77,16 @@ html {
     .section-bestRecipes__message > h2 {
       color: #1D1B59;
       margin-bottom: 1rem; }
+      @media (min-width: 23.43em) {
+        .section-bestRecipes__message > h2 {
+          font-size: 1.6rem; } }
     .section-bestRecipes__message > span {
       color: #aaaaaa;
       text-align: center;
       font-size: 1.1rem; }
+      @media (min-width: 23.43em) {
+        .section-bestRecipes__message > span {
+          font-size: 1.3rem; } }
   .section-bestRecipes__recipes-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -89,6 +100,9 @@ html {
   .section-bestServices__illustration {
     position: relative;
     left: -25%; }
+    @media (min-width: 23.43em) {
+      .section-bestServices__illustration {
+        left: -20%; } }
     .section-bestServices__illustration > img {
       width: 100%; }
   .section-bestServices__message {
@@ -100,14 +114,23 @@ html {
     -o-transform: translate(-50%, 5%);
     transform: translate(-50%, 5%);
     z-index: 1; }
+    @media (min-width: 23.43em) {
+      .section-bestServices__message {
+        top: 6%; } }
     .section-bestServices__message > h2 {
       margin-bottom: 1rem;
       color: #1D1B59; }
+      @media (min-width: 23.43em) {
+        .section-bestServices__message > h2 {
+          font-size: 1.7rem; } }
     .section-bestServices__message > span {
       color: #868686; }
       .section-bestServices__message > span:not(:last-child) {
         display: inline-block;
         margin-bottom: 1rem; }
+      @media (min-width: 23.43em) {
+        .section-bestServices__message > span {
+          font-size: 1.1rem; } }
 
 .section-blog {
   display: flex;
@@ -123,10 +146,16 @@ html {
     .section-blog__message > h2 {
       color: #1D1B59;
       margin-bottom: 1rem; }
+      @media (min-width: 23.43em) {
+        .section-blog__message > h2 {
+          font-size: 1.6rem; } }
     .section-blog__message > span {
       color: #aaaaaa;
       text-align: center;
       font-size: 1.1rem; }
+      @media (min-width: 23.43em) {
+        .section-blog__message > span {
+          font-size: 1.3rem; } }
   .section-blog__posts-container {
     display: flex;
     overflow-x: auto;
@@ -137,12 +166,12 @@ html {
 
 .section-membership {
   position: relative;
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   height: 100vh; }
   @media (min-width: 23.43em) {
     .section-membership {
-      height: 90vh; } }
+      height: 65vh; } }
   .section-membership__illustration {
     display: flex;
     justify-content: flex-end; }
@@ -186,6 +215,9 @@ html {
       font-weight: bold;
       color: #BADC58;
       text-decoration: none; }
+      @media (min-width: 23.43em) {
+        .header__logo > a {
+          font-size: 1.4rem; } }
   .header__options {
     max-width: 70%;
     display: flex;
@@ -200,6 +232,9 @@ html {
       display: inline-block;
       padding: 0.8rem 0.5rem;
       letter-spacing: 0.1rem; }
+      @media (min-width: 23.43em) {
+        .header__options > a {
+          font-size: 1.05rem; } }
       .header__options > a:last-child {
         color: #BADC58;
         background-color: white; }
@@ -212,6 +247,9 @@ html {
   box-shadow: 9px 9px 13px -4px rgba(204, 204, 204, 0.61); }
   .best-recipe-container__img {
     width: 10rem; }
+    @media (min-width: 23.43em) {
+      .best-recipe-container__img {
+        width: 11rem; } }
   .best-recipe-container__title-container {
     display: flex;
     flex-direction: column;
@@ -223,6 +261,9 @@ html {
       font-size: 1.5rem;
       letter-spacing: 0.1rem;
       margin-bottom: 1rem; }
+      @media (min-width: 23.43em) {
+        .best-recipe-container__title-container__title {
+          font-size: 1.55rem; } }
     .best-recipe-container__title-container__input {
       width: 7rem;
       border-radius: 0.5rem;
@@ -230,6 +271,9 @@ html {
       color: white;
       padding: 0.8rem;
       cursor: pointer; }
+      @media (min-width: 23.43em) {
+        .best-recipe-container__title-container__input {
+          font-size: 1.1rem; } }
 
 .post-container {
   display: flex;
@@ -240,6 +284,9 @@ html {
   box-shadow: 9px 9px 13px -4px rgba(204, 204, 204, 0.61);
   width: 16rem;
   flex: none; }
+  @media (min-width: 23.43em) {
+    .post-container {
+      width: 17rem; } }
   .post-container:not(:last-child) {
     margin-right: 1rem; }
   .post-container__img {
@@ -251,6 +298,9 @@ html {
       font-size: 1.2rem;
       letter-spacing: 0.1rem;
       margin-bottom: 1rem; }
+      @media (min-width: 23.43em) {
+        .post-container__title-container__title {
+          font-size: 1.25rem; } }
     .post-container__title-container__author {
       display: flex;
       align-items: center; }
@@ -262,8 +312,15 @@ html {
         padding: 0.5rem;
         border-radius: 50%;
         margin-right: 0.5rem; }
+        @media (min-width: 23.43em) {
+          .post-container__title-container__author__photo {
+            padding: 0.5rem;
+            font-size: 1.2rem; } }
       .post-container__title-container__author__name {
         color: #a0a0a0; }
+        @media (min-width: 23.43em) {
+          .post-container__title-container__author__name {
+            font-size: 1.1rem; } }
 
 .container-arrow-right {
   display: flex;
@@ -306,11 +363,20 @@ html {
     color: #1d164d;
     font-size: 0.9rem;
     margin-right: auto; }
+    @media (min-width: 23.43em) {
+      .footer__copyright {
+        font-size: 1rem; } }
   .footer__links {
     display: flex;
     font-size: 0.85rem;
     color: #b3b3b3; }
+    @media (min-width: 23.43em) {
+      .footer__links {
+        font-size: 0.9rem; } }
 
 .container {
   padding: 2rem 1rem;
   z-index: 1; }
+  @media (min-width: 23.43em) {
+    .container {
+      padding: 2.5rem 1.5rem; } }
