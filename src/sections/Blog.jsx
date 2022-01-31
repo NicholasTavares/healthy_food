@@ -93,8 +93,8 @@ const Blog = () => {
         </span>
       </div>
       <div className="container section-blog__posts-container" ref={carousel}>
-        {posts && posts.map(post => (
-          <Post title={post.title} author={post.author} photo={post.photo} />
+        {posts && posts.map((post, i) => (
+          <Post key={post.title + i} title={post.title} author={post.author} photo={post.photo} />
         ))}
 
         {showLeftButton && (

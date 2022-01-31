@@ -40,8 +40,8 @@ const BestRecipes = () => {
         </span>
       </div>
       <div className="container section-bestRecipes__recipes-container">
-        {recipes && recipes.map(recipe => (
-          <BestRecipe name={recipe.name} photo={recipe.photo} />
+        {recipes && recipes.map((recipe, i) => (
+          <BestRecipe key={recipe.name + i} name={recipe.name} photo={recipe.photo} />
         ))}
       </div>
     </section>
