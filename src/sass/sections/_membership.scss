@@ -1,58 +1,74 @@
 .section-membership {
   position: relative;
   overflow: hidden;
-  height: 100vh;
-
-  @include respond(phone) {
-    height: 65vh;
-  }
-
 
   &__illustration {
     position: relative;
     display: flex;
     justify-content: flex-end;
-    
+
     & > img {
       width: 100%;
 
-      @include respond(tab-small){
+      @include respond(tab-small) {
         width: 70%;
       }
+
+      @include respond(tab-port) {
+        width: 60%;
+      }
     }
-}
+  }
 
   &__form-container {
-
-    @include respond(tab-small){
+    @include respond(tab-small) {
       position: absolute;
       top: 50%;
     }
 
+    @include respond(tab-port) {
+      top: 40%;
+    }
+
     &__form {
-  
       &__title {
         color: #1d164d;
         font-weight: bold;
         font-size: 2rem;
         letter-spacing: 0.1rem;
+
+        @include respond(tab-small) {
+          font-size: 2.5rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 3.5rem;
+        }
       }
-  
-      &__container-text-button{
+
+      &__container-text-button {
         display: flex;
         margin-top: 2rem;
-  
-        &__input{
+
+        &__input {
           outline: none;
           border: 1px solid #1d164d;
           border-radius: 0.5rem;
           padding: 0.8rem;
           color: rgb(172, 172, 172);
+
+          @include respond(tab-small) {
+            padding: 1rem;
+          }
+
+          @include respond(tab-port) {
+            padding: 1.2rem;
+          }
         }
-  
-        &__button{
+
+        &__button {
           margin-left: 1rem;
-          background-color: #BADC58;
+          background-color: #badc58;
           border-radius: 0.5rem;
           width: 4rem;
           display: flex;
@@ -60,9 +76,18 @@
           justify-content: center;
           cursor: pointer;
           color: white;
+
+          @include respond(tab-small) {
+            width: 5rem;
+            font-size: 1.5rem;
+          }
+
+          @include respond(tab-port) {
+            width: 5.5rem;
+            font-size: 1.8rem;
+          }
         }
       }
     }
   }
-  
 }

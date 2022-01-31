@@ -11,9 +11,22 @@
   padding: 1rem;
   cursor: pointer;
 
+  @include respond (tab-small) {
+    right: 4%;
+  }
+
+  @include respond (tab-port) {
+    right: 0%;
+    top: 66%;
+  }
+
   & > svg {
     color: #afd133;
     font-size: 1.4rem;
+
+    @include respond (tab-port) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -30,8 +43,17 @@
   padding: 1rem;
   cursor: pointer;
 
+  @include respond (tab-port) {
+    left: 5%;
+    top: 66%;
+  }
+
   & > svg {
     color: #afd133;
     font-size: 1.4rem;
+
+    @include respond (tab-port) {
+      font-size: 2rem;
+    }
   }
 }

@@ -6,7 +6,15 @@
 
   @include respond(phone) {
     margin-top: 0rem;
-  } 
+  }
+
+  @include respond(tab-small) {
+    padding: 2.5rem 4rem;
+  }
+
+  @include respond(tab-port) {
+    padding: 3rem 6rem;
+  }
 
   &__copyright {
     color: #1d164d;
@@ -20,6 +28,10 @@
     @include respond(tab-small) {
       font-size: 1.2rem;
     }
+
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
 
   &__links {
@@ -31,8 +43,20 @@
       font-size: 0.9rem;
     }
 
-    @include respond(phone) {
+    @include respond(tab-small) {
       font-size: 1.1rem;
-    } 
+    }
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
+
+    & > span {
+      margin-right: 0.5rem;
+
+      @include respond(tab-port) {
+        margin-right: 1rem;
+      }
+    }
   }
 }

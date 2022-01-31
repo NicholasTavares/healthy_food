@@ -16,11 +16,19 @@
     width: 19rem;
   }
 
+  @include respond(tab-port) {
+    width: 28rem;
+  }
+
   &:not(:last-child) {
     margin-right: 1rem;
 
     @include respond(tab-small) {
       margin-right: 2rem;
+    }
+
+    @include respond(tab-port) {
+      margin-right: 3rem;
     }
   }
 
@@ -30,6 +38,10 @@
 
   &__title-container {
     padding: 1rem;
+
+    @include respond(tab-port) {
+      padding: 2rem;
+    }
 
     &__title {
       color: #1d1b59;
@@ -43,6 +55,11 @@
 
       @include respond(tab-small) {
         font-size: 1.5rem;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 2rem;
+        font-size: 2rem;
       }
     }
 
@@ -68,6 +85,11 @@
           padding: 0.8rem;
           font-size: 1.4rem;
         }
+
+        @include respond(tab-port) {
+          padding: 1rem;
+          font-size: 1.8rem;
+        }
       }
 
       &__name {
@@ -79,6 +101,10 @@
 
         @include respond(tab-small) {
           font-size: 1.3rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 1.8rem;
         }
       }
     }

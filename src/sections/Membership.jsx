@@ -11,7 +11,7 @@ const Membership = () => {
         <form className='section-membership__form-container__form'>
           <label className='section-membership__form-container__form__title'
             htmlFor="input">
-            Join our membership
+            Join our membership <br />
             to get special offer
           </label>
           <div className="section-membership__form-container__form__container-text-button">

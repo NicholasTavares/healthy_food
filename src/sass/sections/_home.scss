@@ -2,37 +2,40 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100vh;
-
-  @include respond(phone) {
-    height: 62vh;
+  width: 100%;
+  @include respond(tab-port) {
+    height: 100vh;
   }
-
 
   &__illustration {
     position: absolute;
-    z-index: 0;
     display: flex;
     justify-content: flex-end;
+    width: 100%;
 
     & > img {
-      width: 110%;
-
-      @include respond(phone) {
-        width: 100%;
-      }
+      width: 100%;
 
       @include respond(tab-small) {
-        width: 80%;
+        width: 70%;
       }
+
+      @include respond(tab-port) {
+        width: 65%;
+      }
+
     }
   }
 
   &__container-form {
-    margin-top: auto;
+    margin-top: 70%;
 
     @include respond(tab-small) {
       margin-top: 20%;
+    }
+
+    @include respond(tab-port) {
+      margin-top: 15%;
     }
 
     &__form {
@@ -41,6 +44,14 @@
         font-weight: bold;
         font-size: 2rem;
         letter-spacing: 0.1rem;
+
+        @include respond(tab-small) {
+          font-size: 2.5rem;
+        }
+
+        @include respond(tab-port) {
+          font-size: 5rem;
+        }
       }
 
       &__container-text-button {
@@ -53,6 +64,14 @@
           border-radius: 0.5rem;
           padding: 0.8rem;
           color: rgb(172, 172, 172);
+
+          @include respond(tab-small) {
+            padding: 1rem;
+          }
+
+          @include respond(tab-port) {
+            padding: 1.2rem;
+          }
         }
 
         &__button {
@@ -68,6 +87,22 @@
           & > svg {
             color: white;
             font-size: 1.5rem;
+
+            @include respond(tab-small) {
+              font-size: 2rem;
+            }
+
+            @include respond(tab-port) {
+              font-size: 2.5rem;
+            }
+          }
+
+          @include respond(tab-small) {
+            width: 4rem;
+          }
+
+          @include respond(tab-port) {
+            width: 5rem;
           }
         }
       }

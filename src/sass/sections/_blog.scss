@@ -22,6 +22,10 @@
       @include respond(tab-small) {
         font-size: 1.8rem;
       }
+
+      @include respond(tab-port) {
+        font-size: 3rem;
+      }
     }
 
     & > span {
@@ -36,6 +40,10 @@
       @include respond(tab-small) {
         padding: 0 3rem;
         font-size: 1.5rem;
+      }
+
+      @include respond(tab-port) {
+        font-size: 2rem;
       }
     }
   }

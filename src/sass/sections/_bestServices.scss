@@ -14,12 +14,20 @@
       @include respond(tab-small){
         left: -10%;
       }
+
+      @include respond(tab-port){
+        left: 0;
+      }
       
       & > img {
         width: 100%;
 
         @include respond(tab-small){
           width: 80%;
+        }
+
+        @include respond(tab-port){
+          width: 90%;
         }
       }
   }
@@ -54,6 +62,11 @@
       @include respond(tab-small){
         font-size: 2rem;
       }
+
+      @include respond(tab-port){
+        margin-bottom: 2rem;
+        font-size: 3rem;
+      }
     }
 
     & > span {
@@ -62,6 +75,10 @@
       &:not(:last-child) {
         display: inline-block;
         margin-bottom: 1rem;
+
+        @include respond(tab-port){
+          margin-bottom: 1.5rem;
+        }
       }
 
       @include respond(phone){
@@ -70,6 +87,10 @@
 
       @include respond(tab-small){
         font-size: 1.5rem;
+      }
+
+      @include respond(tab-port){
+        font-size: 2rem;
       }
     }
   }
