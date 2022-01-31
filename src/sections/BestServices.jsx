@@ -25,6 +25,10 @@ const BestServices = () => {
           A small river named Duden flows by their place and
           supplies it with the necessary regelialia.
         </span>
+
+        <div className="section-bestServices__message__button">
+          Know More
+        </div>
       </div>
     </section>
   )

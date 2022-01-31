@@ -197,7 +197,7 @@ html {
           width: 100%; } }
   .section-bestServices__message {
     position: absolute;
-    left: 69%;
+    left: 68%;
     -webkit-transform: translate(-50%, 5%);
     -moz-transform: translate(-50%, 5%);
     -ms-transform: translate(-50%, 5%);
@@ -209,7 +209,7 @@ html {
         top: 2%; } }
     @media (min-width: 34.5em) {
       .section-bestServices__message {
-        top: 25%;
+        top: 15%;
         left: 72%; } }
     .section-bestServices__message > h2 {
       margin-bottom: 1rem;
@@ -250,6 +250,31 @@ html {
       @media (min-width: 56em) {
         .section-bestServices__message > span {
           font-size: 2rem; } }
+    .section-bestServices__message__button {
+      text-align: center;
+      background-color: #badc58;
+      border-radius: 0.5rem;
+      width: 7rem;
+      padding: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      color: white;
+      box-shadow: 0px 17px 24px 3px rgba(186, 220, 88, 0.45); }
+      @media (min-width: 34.5em) {
+        .section-bestServices__message__button {
+          width: 11rem;
+          padding: 0.8rem;
+          font-size: 1.5rem; } }
+      @media (min-width: 56em) {
+        .section-bestServices__message__button {
+          font-size: 1.6rem; } }
+      @media (min-width: 80em) {
+        .section-bestServices__message__button {
+          padding: 1.4rem;
+          width: 12rem;
+          font-size: 1.6rem; } }
 
 .section-blog {
   display: flex;
