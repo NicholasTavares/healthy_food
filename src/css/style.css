@@ -37,8 +37,14 @@ html {
       @media (min-width: 23.43em) {
         .section-home__illustration > img {
           width: 100%; } }
+      @media (min-width: 34.5em) {
+        .section-home__illustration > img {
+          width: 80%; } }
   .section-home__container-form {
     margin-top: auto; }
+    @media (min-width: 34.5em) {
+      .section-home__container-form {
+        margin-top: 20%; } }
     .section-home__container-form__form__title {
       color: #1d164d;
       font-weight: bold;
@@ -80,6 +86,9 @@ html {
       @media (min-width: 23.43em) {
         .section-bestRecipes__message > h2 {
           font-size: 1.6rem; } }
+      @media (min-width: 34.5em) {
+        .section-bestRecipes__message > h2 {
+          font-size: 1.8rem; } }
     .section-bestRecipes__message > span {
       color: #aaaaaa;
       text-align: center;
@@ -87,11 +96,19 @@ html {
       @media (min-width: 23.43em) {
         .section-bestRecipes__message > span {
           font-size: 1.3rem; } }
+      @media (min-width: 34.5em) {
+        .section-bestRecipes__message > span {
+          font-size: 1.5rem; } }
   .section-bestRecipes__recipes-container {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 1.5rem; }
+    @media (min-width: 34.5em) {
+      .section-bestRecipes__recipes-container {
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem; } }
 
 .section-bestServices {
   display: flex;
@@ -99,15 +116,21 @@ html {
   overflow: hidden; }
   .section-bestServices__illustration {
     position: relative;
-    left: -25%; }
+    left: -22%; }
     @media (min-width: 23.43em) {
       .section-bestServices__illustration {
         left: -20%; } }
+    @media (min-width: 34.5em) {
+      .section-bestServices__illustration {
+        left: -10%; } }
     .section-bestServices__illustration > img {
       width: 100%; }
+      @media (min-width: 34.5em) {
+        .section-bestServices__illustration > img {
+          width: 80%; } }
   .section-bestServices__message {
     position: absolute;
-    left: 71%;
+    left: 70%;
     -webkit-transform: translate(-50%, 5%);
     -moz-transform: translate(-50%, 5%);
     -ms-transform: translate(-50%, 5%);
@@ -117,12 +140,19 @@ html {
     @media (min-width: 23.43em) {
       .section-bestServices__message {
         top: 6%; } }
+    @media (min-width: 34.5em) {
+      .section-bestServices__message {
+        top: 25%;
+        left: 72%; } }
     .section-bestServices__message > h2 {
       margin-bottom: 1rem;
       color: #1D1B59; }
       @media (min-width: 23.43em) {
         .section-bestServices__message > h2 {
           font-size: 1.7rem; } }
+      @media (min-width: 34.5em) {
+        .section-bestServices__message > h2 {
+          font-size: 2rem; } }
     .section-bestServices__message > span {
       color: #868686; }
       .section-bestServices__message > span:not(:last-child) {
@@ -131,6 +161,9 @@ html {
       @media (min-width: 23.43em) {
         .section-bestServices__message > span {
           font-size: 1.1rem; } }
+      @media (min-width: 34.5em) {
+        .section-bestServices__message > span {
+          font-size: 1.5rem; } }
 
 .section-blog {
   display: flex;
@@ -149,6 +182,9 @@ html {
       @media (min-width: 23.43em) {
         .section-blog__message > h2 {
           font-size: 1.6rem; } }
+      @media (min-width: 34.5em) {
+        .section-blog__message > h2 {
+          font-size: 1.8rem; } }
     .section-blog__message > span {
       color: #aaaaaa;
       text-align: center;
@@ -156,6 +192,10 @@ html {
       @media (min-width: 23.43em) {
         .section-blog__message > span {
           font-size: 1.3rem; } }
+      @media (min-width: 34.5em) {
+        .section-blog__message > span {
+          padding: 0 3rem;
+          font-size: 1.5rem; } }
   .section-blog__posts-container {
     display: flex;
     overflow-x: auto;
@@ -166,32 +206,39 @@ html {
 
 .section-membership {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  overflow: hidden;
   height: 100vh; }
   @media (min-width: 23.43em) {
     .section-membership {
       height: 65vh; } }
   .section-membership__illustration {
+    position: relative;
     display: flex;
     justify-content: flex-end; }
     .section-membership__illustration > img {
-      width: 110%; }
-  .section-membership__form__title {
+      width: 100%; }
+      @media (min-width: 34.5em) {
+        .section-membership__illustration > img {
+          width: 70%; } }
+  @media (min-width: 34.5em) {
+    .section-membership__form-container {
+      position: absolute;
+      top: 50%; } }
+  .section-membership__form-container__form__title {
     color: #1d164d;
     font-weight: bold;
     font-size: 2rem;
     letter-spacing: 0.1rem; }
-  .section-membership__form__container-text-button {
+  .section-membership__form-container__form__container-text-button {
     display: flex;
     margin-top: 2rem; }
-    .section-membership__form__container-text-button__input {
+    .section-membership__form-container__form__container-text-button__input {
       outline: none;
       border: 1px solid #1d164d;
       border-radius: 0.5rem;
       padding: 0.8rem;
       color: #acacac; }
-    .section-membership__form__container-text-button__button {
+    .section-membership__form-container__form__container-text-button__button {
       margin-left: 1rem;
       background-color: #BADC58;
       border-radius: 0.5rem;
@@ -207,6 +254,10 @@ html {
   align-items: center;
   justify-content: space-around;
   height: 2rem; }
+  @media (min-width: 34.5em) {
+    .header {
+      height: 3rem;
+      justify-content: space-between; } }
   .header__logo {
     max-width: 30%; }
     .header__logo > a {
@@ -218,6 +269,9 @@ html {
       @media (min-width: 23.43em) {
         .header__logo > a {
           font-size: 1.4rem; } }
+      @media (min-width: 34.5em) {
+        .header__logo > a {
+          font-size: 1.6rem; } }
   .header__options {
     max-width: 70%;
     display: flex;
@@ -235,6 +289,9 @@ html {
       @media (min-width: 23.43em) {
         .header__options > a {
           font-size: 1.05rem; } }
+      @media (min-width: 34.5em) {
+        .header__options > a {
+          font-size: 1.2rem; } }
       .header__options > a:last-child {
         color: #BADC58;
         background-color: white; }
@@ -250,6 +307,9 @@ html {
     @media (min-width: 23.43em) {
       .best-recipe-container__img {
         width: 11rem; } }
+    @media (min-width: 34.5em) {
+      .best-recipe-container__img {
+        width: 14rem; } }
   .best-recipe-container__title-container {
     display: flex;
     flex-direction: column;
@@ -264,6 +324,9 @@ html {
       @media (min-width: 23.43em) {
         .best-recipe-container__title-container__title {
           font-size: 1.55rem; } }
+      @media (min-width: 34.5em) {
+        .best-recipe-container__title-container__title {
+          font-size: 1.8rem; } }
     .best-recipe-container__title-container__input {
       width: 7rem;
       border-radius: 0.5rem;
@@ -274,6 +337,10 @@ html {
       @media (min-width: 23.43em) {
         .best-recipe-container__title-container__input {
           font-size: 1.1rem; } }
+      @media (min-width: 34.5em) {
+        .best-recipe-container__title-container__input {
+          width: 8rem;
+          font-size: 1.2rem; } }
 
 .post-container {
   display: flex;
@@ -287,8 +354,14 @@ html {
   @media (min-width: 23.43em) {
     .post-container {
       width: 17rem; } }
+  @media (min-width: 34.5em) {
+    .post-container {
+      width: 19rem; } }
   .post-container:not(:last-child) {
     margin-right: 1rem; }
+    @media (min-width: 34.5em) {
+      .post-container:not(:last-child) {
+        margin-right: 2rem; } }
   .post-container__img {
     width: 100%; }
   .post-container__title-container {
@@ -301,6 +374,9 @@ html {
       @media (min-width: 23.43em) {
         .post-container__title-container__title {
           font-size: 1.25rem; } }
+      @media (min-width: 34.5em) {
+        .post-container__title-container__title {
+          font-size: 1.5rem; } }
     .post-container__title-container__author {
       display: flex;
       align-items: center; }
@@ -316,11 +392,18 @@ html {
           .post-container__title-container__author__photo {
             padding: 0.5rem;
             font-size: 1.2rem; } }
+        @media (min-width: 34.5em) {
+          .post-container__title-container__author__photo {
+            padding: 0.8rem;
+            font-size: 1.4rem; } }
       .post-container__title-container__author__name {
         color: #a0a0a0; }
         @media (min-width: 23.43em) {
           .post-container__title-container__author__name {
             font-size: 1.1rem; } }
+        @media (min-width: 34.5em) {
+          .post-container__title-container__author__name {
+            font-size: 1.3rem; } }
 
 .container-arrow-right {
   display: flex;
@@ -359,6 +442,9 @@ html {
   padding: 2rem 2rem;
   background-color: white;
   margin-top: 3rem; }
+  @media (min-width: 23.43em) {
+    .footer {
+      margin-top: 0rem; } }
   .footer__copyright {
     color: #1d164d;
     font-size: 0.9rem;
@@ -366,6 +452,9 @@ html {
     @media (min-width: 23.43em) {
       .footer__copyright {
         font-size: 1rem; } }
+    @media (min-width: 34.5em) {
+      .footer__copyright {
+        font-size: 1.2rem; } }
   .footer__links {
     display: flex;
     font-size: 0.85rem;
@@ -373,6 +462,9 @@ html {
     @media (min-width: 23.43em) {
       .footer__links {
         font-size: 0.9rem; } }
+    @media (min-width: 23.43em) {
+      .footer__links {
+        font-size: 1.1rem; } }
 
 .container {
   padding: 2rem 1rem;
@@ -380,3 +472,6 @@ html {
   @media (min-width: 23.43em) {
     .container {
       padding: 2.5rem 1.5rem; } }
+  @media (min-width: 34.5em) {
+    .container {
+      padding: 4rem 3rem; } }

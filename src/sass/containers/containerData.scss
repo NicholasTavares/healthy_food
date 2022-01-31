@@ -5,4 +5,8 @@
   @include respond(phone) {
     padding: 2.5rem 1.5rem;
   }
+
+  @include respond(tab-small) {
+    padding: 4rem 3rem;
+  }
 }

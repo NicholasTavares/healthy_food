@@ -11,6 +11,10 @@
     @include respond(phone){
       width: 11rem;
     }
+
+    @include respond(tab-small){
+      width: 14rem;
+    }
   }
 
   &__title-container {
@@ -29,6 +33,10 @@
       @include respond(phone) {
         font-size: 1.55rem;
       }
+
+      @include respond(tab-small) {
+        font-size: 1.8rem;
+      }
     }
 
     &__input {
@@ -41,6 +49,11 @@
 
       @include respond(phone){
         font-size: 1.1rem;
+      }
+
+      @include respond(tab-small){
+        width: 8rem;
+        font-size: 1.2rem;
       }
     }
   }

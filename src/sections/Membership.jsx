@@ -7,17 +7,17 @@ const Membership = () => {
       <div className='section-membership__illustration'>
         <img src={Illustration} alt="Illustration" />
       </div>
-      <div className="container">
-        <form className='section-membership__form'>
-          <label className='section-membership__form__title'
+      <div className="container section-membership__form-container">
+        <form className='section-membership__form-container__form'>
+          <label className='section-membership__form-container__form__title'
             htmlFor="input">
             Join our membership
             to get special offer
           </label>
-          <div className="section-membership__form__container-text-button">
+          <div className="section-membership__form-container__form__container-text-button">
             <input type="text" id='input' placeholder='Enter your email address'
-              className='section-membership__form__container-text-button__input' />
-            <div className="section-membership__form__container-text-button__button">
+              className='section-membership__form-container__form__container-text-button__input' />
+            <div className="section-membership__form-container__form__container-text-button__button">
               Join
             </div>
           </div>

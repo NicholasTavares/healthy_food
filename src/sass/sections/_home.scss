@@ -8,6 +8,7 @@
     height: 62vh;
   }
 
+
   &__illustration {
     position: absolute;
     z-index: 0;
@@ -20,11 +21,19 @@
       @include respond(phone) {
         width: 100%;
       }
+
+      @include respond(tab-small) {
+        width: 80%;
+      }
     }
   }
 
   &__container-form {
     margin-top: auto;
+
+    @include respond(tab-small) {
+      margin-top: 20%;
+    }
 
     &__form {
       &__title {

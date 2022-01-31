@@ -5,20 +5,28 @@
 
   &__illustration {
       position: relative;
-      left: -25%;
+      left: -22%;
 
       @include respond(phone){
         left: -20%;
       }
+
+      @include respond(tab-small){
+        left: -10%;
+      }
       
       & > img {
         width: 100%;
+
+        @include respond(tab-small){
+          width: 80%;
+        }
       }
   }
 
   &__message {
     position: absolute;
-    left: 71%;
+    left: 70%;
     -webkit-transform: translate(-50%, 5%);
     -moz-transform: translate(-50%, 5%);
     -ms-transform: translate(-50%, 5%);
@@ -30,12 +38,21 @@
       top: 6%;
     }
 
+    @include respond(tab-small){
+      top: 25%;
+      left: 72%;
+    }
+
     & > h2 {
       margin-bottom: 1rem;
       color: $dark-blue-text;
 
       @include respond(phone){
         font-size: 1.7rem;
+      }
+
+      @include respond(tab-small){
+        font-size: 2rem;
       }
     }
 
@@ -49,6 +66,10 @@
 
       @include respond(phone){
         font-size: 1.1rem;
+      }
+
+      @include respond(tab-small){
+        font-size: 1.5rem;
       }
     }
   }

@@ -12,8 +12,16 @@
     width: 17rem;
   }
 
+  @include respond(tab-small) {
+    width: 19rem;
+  }
+
   &:not(:last-child) {
     margin-right: 1rem;
+
+    @include respond(tab-small) {
+      margin-right: 2rem;
+    }
   }
 
   &__img {
@@ -31,6 +39,10 @@
 
       @include respond(phone) {
         font-size: 1.25rem;
+      }
+
+      @include respond(tab-small) {
+        font-size: 1.5rem;
       }
     }
 
@@ -51,6 +63,11 @@
           padding: 0.5rem;
           font-size: 1.2rem;
         }
+
+        @include respond(tab-small) {
+          padding: 0.8rem;
+          font-size: 1.4rem;
+        }
       }
 
       &__name {
@@ -58,6 +75,10 @@
 
         @include respond(phone) {
           font-size: 1.1rem;
+        }
+
+        @include respond(tab-small) {
+          font-size: 1.3rem;
         }
       }
     }

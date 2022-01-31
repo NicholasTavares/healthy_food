@@ -13,7 +13,7 @@
     }
   }
 
-  // 690px
+  // 768px
   @if $breakpoint == tab-small {
     @media (min-width: 34.5em) {
       @content;
