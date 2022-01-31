@@ -16,6 +16,10 @@
     padding: 3rem 6rem;
   }
 
+  @include respond(tab-land) {
+    padding: 4rem 7rem;
+  }
+
   &__copyright {
     color: #1d164d;
     font-size: 0.9rem;
@@ -32,12 +36,16 @@
     @include respond(tab-port) {
       font-size: 1.5rem;
     }
+
+    @include respond(tab-land) {
+      font-size: 1.8rem;
+    }
   }
 
   &__links {
     display: flex;
     font-size: 0.85rem;
-    color: #b3b3b3;
+    color: #aaaaaa;
 
     @include respond(phone) {
       font-size: 0.9rem;
@@ -51,11 +59,19 @@
       font-size: 1.4rem;
     }
 
+    @include respond(tab-land) {
+      font-size: 1.5rem;
+    }
+
     & > span {
       margin-right: 0.5rem;
 
       @include respond(tab-port) {
         margin-right: 1rem;
+      }
+
+      @include respond(tab-land) {
+        margin-right: 2rem;
       }
     }
   }

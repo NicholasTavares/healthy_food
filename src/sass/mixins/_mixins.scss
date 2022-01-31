@@ -28,8 +28,8 @@
   }
 
   @if $breakpoint == tab-land {
-    // 1020px
-    @media (min-width: 62em) {
+    // 1280px
+    @media (min-width: 80em) {
       @content;
     }
   }

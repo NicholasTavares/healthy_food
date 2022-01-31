@@ -24,6 +24,10 @@
         width: 65%;
       }
 
+      @include respond(tab-land) {
+        width: 50%;
+      }
+
     }
   }
 
@@ -36,6 +40,10 @@
 
     @include respond(tab-port) {
       margin-top: 15%;
+    }
+
+    @include respond(tab-land) {
+      margin-top: 5%;
     }
 
     &__form {
@@ -51,6 +59,11 @@
 
         @include respond(tab-port) {
           font-size: 5rem;
+        }
+
+        @include respond(tab-land) {
+          letter-spacing: 0.3rem;
+          font-size: 6rem;
         }
       }
 
@@ -71,6 +84,10 @@
 
           @include respond(tab-port) {
             padding: 1.2rem;
+          }
+
+          @include respond(tab-land) {
+            padding: 1.3rem;
           }
         }
 

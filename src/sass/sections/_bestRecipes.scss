@@ -23,6 +23,10 @@
       @include respond(tab-port) {
         font-size: 2.8rem;
       }
+
+      @include respond(tab-land) {
+        font-size: 3.6rem;
+      }
     }
 
     & > span {
@@ -40,7 +44,13 @@
 
       @include respond(tab-port) {
         font-size: 2rem;
+        padding: 0 20rem;
       }
+
+      @include respond(tab-land) {
+        padding: 0 30rem;
+      }
+      
     }
   }
 
@@ -58,6 +68,10 @@
 
     @include respond(tab-port) {
       grid-gap: 3rem;
+    }
+
+    @include respond(tab-land) {
+      grid-gap: 3.5rem;
     }
   }
 }

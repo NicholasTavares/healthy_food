@@ -29,6 +29,10 @@
         @include respond(tab-port){
           width: 90%;
         }
+
+        @include respond(tab-land){
+          width: 100%;
+        }
       }
   }
 
@@ -67,10 +71,15 @@
         margin-bottom: 2rem;
         font-size: 3rem;
       }
+
+      @include respond(tab-land){
+        margin-bottom: 3rem;
+        font-size: 4rem;
+      }
     }
 
     & > span {
-      color: rgb(134, 134, 134);
+      color: rgb(150, 150, 150);
 
       &:not(:last-child) {
         display: inline-block;
@@ -78,6 +87,10 @@
 
         @include respond(tab-port){
           margin-bottom: 1.5rem;
+        }
+
+        @include respond(tab-land){
+          margin-bottom: 3rem;
         }
       }
 
