@@ -38,7 +38,7 @@
 
   &__message {
     position: absolute;
-    left: 70%;
+    left: 69%;
     -webkit-transform: translate(-50%, 5%);
     -moz-transform: translate(-50%, 5%);
     -ms-transform: translate(-50%, 5%);
@@ -47,7 +47,7 @@
     z-index: 1;
 
     @include respond(phone){
-      top: 6%;
+      top: 2%;
     }
 
     @include respond(tab-small){
@@ -58,9 +58,10 @@
     & > h2 {
       margin-bottom: 1rem;
       color: $dark-blue-text;
+      font-size: 1.35rem;
 
       @include respond(phone){
-        font-size: 1.7rem;
+        font-size: 1.5rem;
       }
 
       @include respond(tab-small){
@@ -80,6 +81,7 @@
 
     & > span {
       color: rgb(150, 150, 150);
+      font-size: 0.9rem;
 
       &:not(:last-child) {
         display: inline-block;
@@ -95,7 +97,7 @@
       }
 
       @include respond(phone){
-        font-size: 1.1rem;
+        font-size: 1rem;
       }
 
       @include respond(tab-small){

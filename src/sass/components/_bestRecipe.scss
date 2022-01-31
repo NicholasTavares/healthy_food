@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
 
     @include respond(tab-land){
       padding: 0 3.5rem;
@@ -38,9 +38,9 @@
 
     &__title {
       color: #1D1B59;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       letter-spacing: 0.1rem;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
 
       @include respond(phone) {
         font-size: 1.55rem;
@@ -61,7 +61,7 @@
     }
 
     &__input {
-      width: 7rem;
+      width: 7.5rem;
       border-radius: 0.5rem;
       background-color: #BDD959;
       color: white;
@@ -70,17 +70,17 @@
       text-align: center;
 
       @include respond(phone){
-        font-size: 1.1rem;
+        font-size: 1.05rem;
       }
 
       @include respond(tab-small){
         width: 8rem;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
 
       @include respond(tab-port){
         width: 10rem;
-        font-size: 1.6rem;
+        font-size: 1.5rem;
       }
 
       @include respond(tab-land){

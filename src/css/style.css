@@ -197,7 +197,7 @@ html {
           width: 100%; } }
   .section-bestServices__message {
     position: absolute;
-    left: 70%;
+    left: 69%;
     -webkit-transform: translate(-50%, 5%);
     -moz-transform: translate(-50%, 5%);
     -ms-transform: translate(-50%, 5%);
@@ -206,17 +206,18 @@ html {
     z-index: 1; }
     @media (min-width: 23.43em) {
       .section-bestServices__message {
-        top: 6%; } }
+        top: 2%; } }
     @media (min-width: 34.5em) {
       .section-bestServices__message {
         top: 25%;
         left: 72%; } }
     .section-bestServices__message > h2 {
       margin-bottom: 1rem;
-      color: #1D1B59; }
+      color: #1D1B59;
+      font-size: 1.35rem; }
       @media (min-width: 23.43em) {
         .section-bestServices__message > h2 {
-          font-size: 1.7rem; } }
+          font-size: 1.5rem; } }
       @media (min-width: 34.5em) {
         .section-bestServices__message > h2 {
           font-size: 2rem; } }
@@ -229,7 +230,8 @@ html {
           margin-bottom: 3rem;
           font-size: 4rem; } }
     .section-bestServices__message > span {
-      color: #969696; }
+      color: #969696;
+      font-size: 0.9rem; }
       .section-bestServices__message > span:not(:last-child) {
         display: inline-block;
         margin-bottom: 1rem; }
@@ -241,7 +243,7 @@ html {
             margin-bottom: 3rem; } }
       @media (min-width: 23.43em) {
         .section-bestServices__message > span {
-          font-size: 1.1rem; } }
+          font-size: 1rem; } }
       @media (min-width: 34.5em) {
         .section-bestServices__message > span {
           font-size: 1.5rem; } }
@@ -398,12 +400,12 @@ html {
     .header {
       height: 4rem; } }
   .header__logo {
-    max-width: 30%; }
+    max-width: 30%;
+    text-align: center; }
     .header__logo > a {
-      text-align: center;
       font-size: 1.3rem;
       font-weight: bold;
-      color: #BADC58;
+      color: white;
       text-decoration: none;
       letter-spacing: 0.1rem; }
       @media (min-width: 23.43em) {
@@ -411,6 +413,7 @@ html {
           font-size: 1.4rem; } }
       @media (min-width: 34.5em) {
         .header__logo > a {
+          color: #BADC58;
           font-size: 1.6rem; } }
       @media (min-width: 56em) {
         .header__logo > a {
@@ -430,8 +433,9 @@ html {
       text-decoration: none;
       color: white;
       display: inline-block;
-      padding: 0.8rem 0.5rem;
-      letter-spacing: 0.1rem; }
+      padding: 0.8rem 0.4rem;
+      letter-spacing: 0.1rem;
+      font-size: 0.9rem; }
       @media (min-width: 23.43em) {
         .header__options > a {
           font-size: 1.05rem; } }
@@ -479,15 +483,15 @@ html {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    padding: 0 2rem; }
+    padding: 0 1.5rem; }
     @media (min-width: 80em) {
       .best-recipe-container__title-container {
         padding: 0 3.5rem; } }
     .best-recipe-container__title-container__title {
       color: #1D1B59;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       letter-spacing: 0.1rem;
-      margin-bottom: 1rem; }
+      margin-bottom: 0.8rem; }
       @media (min-width: 23.43em) {
         .best-recipe-container__title-container__title {
           font-size: 1.55rem; } }
@@ -502,7 +506,7 @@ html {
         .best-recipe-container__title-container__title {
           font-size: 2.8rem; } }
     .best-recipe-container__title-container__input {
-      width: 7rem;
+      width: 7.5rem;
       border-radius: 0.5rem;
       background-color: #BDD959;
       color: white;
@@ -511,15 +515,15 @@ html {
       text-align: center; }
       @media (min-width: 23.43em) {
         .best-recipe-container__title-container__input {
-          font-size: 1.1rem; } }
+          font-size: 1.05rem; } }
       @media (min-width: 34.5em) {
         .best-recipe-container__title-container__input {
           width: 8rem;
-          font-size: 1.2rem; } }
+          font-size: 1.1rem; } }
       @media (min-width: 56em) {
         .best-recipe-container__title-container__input {
           width: 10rem;
-          font-size: 1.6rem; } }
+          font-size: 1.5rem; } }
       @media (min-width: 80em) {
         .best-recipe-container__title-container__input {
           padding: 1.4rem;
