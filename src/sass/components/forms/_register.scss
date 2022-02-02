@@ -1,0 +1,48 @@
+.container-form {
+  display: flex;
+  flex-direction: column;
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    & > label {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #1d164d;
+    }
+
+    & > input {
+      border-radius: 1rem;
+      outline: none;
+      border: 1px solid #1d164d;
+      padding: 0.2rem 0.8rem;
+    }
+  }
+
+  &__button {
+    outline: none;
+    border: 1px solid ghostwhite;
+    background-color: white;
+    border-radius: 1rem;
+    color: white;
+    letter-spacing: 0.1rem;
+    transition: 500ms;
+    background-color: rgb(212, 212, 212);
+    padding: 0.5rem 0.4rem;
+    font-size: 1rem;
+    width: 6rem;
+
+    @include respond(tab-land) {
+      padding: 0.8rem 0.5rem;
+      width: 14rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__button-go {
+    cursor: pointer;
+    box-shadow: inset 14rem 0 0 rgb(140, 201, 17);
+  }
+}

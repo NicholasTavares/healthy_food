@@ -1,0 +1,48 @@
+.modal-overlay {
+  z-index: 100;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#000000, 0.3);
+  animation: onMount 1s ease;
+  transition: all 1000ms;
+
+  &__modal {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem 1.5rem;
+    background-color: white;
+    border-radius: 1rem;
+    width: 25rem;
+    animation: onMount 1s ease;
+    transition: all 1000ms;
+    max-height: 32rem;
+    overflow-y: auto;
+
+    &__modal-titulo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      color: #badc58;
+
+      &__close-icon {
+        transition: all 500ms;
+        &:hover {
+          color: #df0000;
+          cursor: pointer;
+        }
+        & > svg {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+}

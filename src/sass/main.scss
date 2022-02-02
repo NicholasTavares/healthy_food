@@ -17,6 +17,12 @@
 @import "./components/post";
 @import "./components/arrow";
 @import "./components/footer";
+@import "./components/modal";
+@import "./components/forms/register";
 
 // CONTAINERS
 @import "./containers/containerData.scss";
+
+// ANIMATIONS
+@import "./animations/onMount";
+@import "./animations/msgAlert";
