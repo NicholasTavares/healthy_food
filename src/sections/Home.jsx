@@ -36,7 +36,7 @@ const Home = () => {
       </div>
       {showModal && (
         <Modal setShowModal={setShowModal} title='Register'>
-          <Register />
+          <Register setShowModal={setShowModal} />
         </Modal>
       )}
     </section>

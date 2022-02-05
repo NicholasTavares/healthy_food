@@ -1,24 +1,33 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import axios from 'axios'
 import InputMask from 'react-input-mask'
 import schemaRegister from './schemas/schemaRegister';
+import Cookies from 'js-cookie'
 
-const Register = () => {
+const Register = ({setShowModal}) => {
 
-  const [cepInformation, setCepInformation] = useState(null)
-
-  function enviar(values, actions) {
-    console.log(values);
+  function register(form) {
+    for (let field in form){
+      localStorage.setItem(field, form[field])
+      Cookies.set(field, form[field])
+    }
+    setShowModal(false)
+    alert('Successfully registered!')
   }
 
-  async function apiCorreios(value) {
+  async function apiCorreios(value, setFieldValue, setFieldError) {
     const cep = value.target.value.replace(/[!@#$%_^&*-]/g, "")
-    console.log('CEP', cep)
     if (cep.length === 8) {
       await axios(`https://viacep.com.br/ws/${cep}/json/`).then(e => {
-        console.log(e)
-        setCepInformation(e)
+        if (!e.data.erro) {
+          setFieldValue('uf', e.data.uf)
+          setFieldValue('cidade', e.data.localidade)
+          setFieldValue('bairro', e.data.bairro)
+          setFieldValue('rua', e.data.logradouro)
+        } else {
+          setFieldError('cep', "CEP inválido")
+        }
       })
     }
   }
@@ -26,9 +35,9 @@ const Register = () => {
   return (
     <Formik
       validationSchema={schemaRegister}
-      onSubmit={enviar}
+      onSubmit={register}
       validateOnMount
-      initialValues={{ nome: '', data_nascimento: '', cpf: '', cep: '', uf: '', cidade: '' }}>
+      initialValues={{ nome: '', data_nascimento: '', cpf: '', cep: '', uf: '', cidade: '', bairro: '', rua: '' }}>
       {({ isValid, handleChange, setFieldValue, setFieldError }) => (
         <Form className='container-form'>
 
@@ -43,7 +52,7 @@ const Register = () => {
           <div className="container-form__field">
             <label>Data de Nascimento</label>
             <Field name="data_nascimento" type="date" onChange={handleChange} />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="data_nascimento" />
             </div>
           </div>
@@ -53,7 +62,7 @@ const Register = () => {
             <Field name="cpf" render={({ field }) => (
               <InputMask placeholder="999.999.999-99" {...field} type="text" mask="999.999.999-99" onChange={handleChange} />
             )} />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="cpf" />
             </div>
           </div>
@@ -61,26 +70,13 @@ const Register = () => {
           <div className="container-form__field">
             <label>CEP</label>
             <Field name="cep" render={({ field }) => (
-              <InputMask placeholder="00000-000" {...field} type="text" mask="99999-999" onChange={(e) => {
+              <InputMask placeholder="00000-000" {...field} type="text" mask="99999-999"
+              onChange={(e) => {
                 handleChange(e)
-                apiCorreios(e)
-                if (!cepInformation.data.erro) {
-                  setFieldValue('uf', cepInformation.data.uf)
-                  setFieldValue('cidade', cepInformation.data.localidade)
-                  setFieldValue('bairro', cepInformation.data.bairro)
-                  setFieldValue('rua', cepInformation.data.logradouro)
-                } 
-                if (cepInformation.data.erro) {
-                  setFieldError('cep', "CEP inválido")
-                  setFieldValue('uf', '')
-                  setFieldValue('cidade', '')
-                  setFieldValue('bairro', '')
-                  setFieldValue('rua', '')
-                }
-                
+                apiCorreios(e, setFieldValue, setFieldError)
               }} />
             )} />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="cep" />
             </div>
           </div>
@@ -88,7 +84,7 @@ const Register = () => {
           <div className="container-form__field">
             <label>UF</label>
             <Field name="uf" onChange={handleChange} placeholder="PR" type="text" />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="uf" />
             </div>
           </div>
@@ -96,7 +92,7 @@ const Register = () => {
           <div className="container-form__field">
             <label>Cidade</label>
             <Field name="cidade" onChange={handleChange} placeholder="Curitiba" type="text" />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="cidade" />
             </div>
           </div>
@@ -104,15 +100,15 @@ const Register = () => {
           <div className="container-form__field">
             <label>Bairro</label>
             <Field name="bairro" onChange={handleChange} placeholder="Bairro Novo" type="text" />
-            <div className="container-form-modal__container-msg">
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="bairro" />
             </div>
           </div>
 
           <div className="container-form__field">
             <label>Rua</label>
-            <Field name="rua" onChange={handleChange} placeholder="Bairro Novo" type="text" />
-            <div className="container-form-modal__container-msg">
+            <Field name="rua" onChange={handleChange} placeholder="Rua Prof. Pedro" type="text" />
+            <div className="container-form__field__container-msg">
               <ErrorMessage name="rua" />
             </div>
           </div>

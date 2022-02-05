@@ -6,7 +6,7 @@ const portalRoot = document.getElementById('root')
 
 const Modal = ({setShowModal, title, children}) => {
   return reactDom.createPortal(
-    <div className="modal-overlay">
+    <div className="modal-overlay" >
         <div className="modal-overlay__modal">
             <div className="modal-overlay__modal__modal-titulo">
                 <h2>{title}</h2>

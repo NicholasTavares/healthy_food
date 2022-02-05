@@ -26,12 +26,54 @@
     max-height: 32rem;
     overflow-y: auto;
 
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: gray;
+    }
+
+    @include respond(phone) {
+      top: 40%;
+      width: 28rem;
+    }
+
+    @include respond(tab-small) {
+      top: 38%;
+      width: 30rem;
+    }
+
+    @include respond(tab-port) {
+      top: 38%;
+      width: 40rem;
+      padding: 1.5rem 2rem;
+    }
+
+    @include respond(tab-land) {
+      width: 42rem;
+      padding: 2rem 2.5rem;
+    }
+
     &__modal-titulo {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 1.5rem;
       color: #badc58;
+
+      @include respond(tab-port) {
+        font-size: 1.5rem;
+      }
+
+      @include respond(tab-land) {
+        font-size: 1.75rem;
+      }
 
       &__close-icon {
         transition: all 500ms;
@@ -41,6 +83,14 @@
         }
         & > svg {
           font-size: 1.8rem;
+
+          @include respond(tab-port) {
+            font-size: 2.5rem;
+          }
+
+          @include respond(tab-land) {
+            font-size: 3.5rem;
+          }
         }
       }
     }
